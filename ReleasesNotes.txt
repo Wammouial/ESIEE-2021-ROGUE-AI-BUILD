@@ -1,0 +1,118 @@
+﻿#=================#
+#  RELEASE NOTES  #
+#=================#
+
+
+Mise en œuvre technique et d’installation du produit 
+----------------------------
+
+
+Windows 10, PC aux capacités standard minimum.
+Clavier requis, souris fortement recommandée. (le pad est un enfer)
+
+
+        
+Contrôles et fonctionnalités
+----------------------------
+
+
+Déplacement du personnage : ZQSD
+Visée : Souris
+
+
+Les sorts sont localisés sur les touches A, E et Espace.
+Pour lancer un sort, il faut appuyer sur la touche du sort. Le sort est ainsi sélectionné.
+Il faut ensuite  cliquer (clic droit) à l'endroit ou nous souhaitons lancer le sort, un clic gauche permet d'annuler la sélection du sort.
+(des éléments visuels permettent de visualiser la trajectoire que suivra le sort ou sa range)
+
+
+!! Attention au coût en mana (inscrit en haut du sort) !!
+Certains sorts, comme le soin, se lancent immédiatement, puisqu'ils ne nécéssitent pas de visée.
+Vous pouvez annuler le lancement d'un sort en cliquant gauche
+
+
+Vous pouvez lancer une attaque de base en cliquant sur un ennemi (clic gauche sans sort sélectionné)
+(Il faut être assez proche pour un personnage corps à corps)
+
+
+
+
+Bugs connus
+----------------------------
+Mettre le jeu en pause fige les projectiles 
+Mettre le jeu en pause peut faire bugger la dragon
+Lors d'un changement de direction, les mobs glitch l'espace d'une frame
+
+
+
+
+Librairies utilisées / inspirations
+--------------------------------------------
+fluid behavior tree : https://github.com/ashblue/fluid-behavior-tree
+Generation de terrain : https://www.youtube.com/channel/UCmtyQOKKmrMVaKuRXz02jbQ
+
+
+
+
+Assets utilisés 
+----------------------------
+
+
+Icônes des sorts récupérés des assets de League of legend (gratuit)
+
+
+player : https://assetstore.unity.com/packages/p/rpg-hero-pbr-hp-polyart-121480 (gratuit , Version 1.1)
+
+
+dragon : https://assetstore.unity.com/packages/3d/characters/creatures/dragon-the-soul-eater-and-dragon-boar-77121 (gratuit , Version 1.2)
+
+
+Différents éléments du décor : Low Poly Environment Pack ; https://assetstore.unity.com/packages/3d/environments/landscapes/lowpoly-environment-pack-99479
+
+
+Kamikaze et boulbil : RPGMonsterPartnersPBRPolyart : https://assetstore.unity.com/packages/3d/characters/creatures/rpg-monster-partners-pbr-polyart-168251
+
+
+Props : Polygon Desert Mobile https://assetstore.unity.com/packages/3d/environments/landscapes/polydesert-107196
+
+
+Polygon Desert Pack : https://assetstore.unity.com/packages/3d/environments/free-low-poly-desert-pack-106709
+
+
+Pour le menu : TextMeshPro : https://docs.unity3d.com/Manual/com.unity.textmeshpro.html
+
+
+ParticleExplosion : récupéré sur un forum dont je n’ai plus le nom
+
+
+Effect Example : https://assetstore.unity.com/packages/essentials/tutorial-projects/unity-particle-pack-127325
+
+
+Derniers Ajouts
+----------------------------
+
+
++ Features +
+
+
+- Ajout de la minimap
+- Ajout d'un HUD pour les sorts
+- Regeneration de mana / hp
+- Animation d'attaque pour les monstres et les champions
+- Ajout de la position des ennemis sur la minimap
+- Affichage de la "range" des sorts
+- Game over et niveau suivant fonctionnels
+- Apparition du dragon uniquement après l'élimination 
+
+
++ Fixs +
+
+
+- Ennemis grimpent sur les murs, mais beaucoup moins qu'avant, et ne se chevauchent plus
+- Fix du calcul des dégâts
+- Les layouts ne se superposent plus lors du play / pause
+- Le dragon est plus menaçant et paramétrable
+- Fix d'une boucle infini faisant crash l'appli 
+- Fix du level manager 
+- Fix du mana 
+- Les abris / coeurs générés par le dragon sont parfois générés dans les murs
